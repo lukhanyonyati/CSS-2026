@@ -28,7 +28,7 @@ st.image(
     caption="Nature (Pixabay)"
 )
 
-# Collecte overview of the profile
+# Collect overview of the profile
 profile = """I am a public health researcher and academic leader with extensive experience in child development, nutritional and life-course epidemiology, health data analytics, and community-oriented engagement. My work covers scientific research, curriculum innovation, research governance, and public empowerment.
 
 I currently serve as the Coordinator for the Master of Health Data Analytics programme at the University of the Western Cape, where I guide curriculum design and lead efforts to train the next generation of health data scientists. This Master’s programme is a key postgraduate qualification offered through the Faculty of Community and Health Sciences, equipping students with advanced analytical skills to interpret and apply health data for decision-making and systems improvement.  
@@ -41,10 +41,15 @@ My leadership extends beyond research and teaching. I serve as an executive memb
 
 In the community sphere, I conduct initiatives focused on men and boys, promoting positive health behaviours, social responsibility, and transformative engagement that addresses structural and behavioural determinants of health. I also co-host The Pulse of the Nation on The Voice Lounge - a dynamic online radio platform that amplifies meaningful dialogue on societal issues, health, and empowerment, merging media outreach with educational and social discourse."""
 
-# Display over view of profile
-st.subheader("Educator • Researcher • Public Speaker • Trainer • Mentor & Coach")
-st.write(f"{profile}")
+with st.sidebar: 
+    st.title("About") 
+    selection = st.radio("Go to:",
+                     "About","Publications","Projects","Contact")
 
+# Display over view of profile
+if selection== "About": 
+    st.subheader("Educator • Researcher • Public Speaker • Trainer • Mentor & Coach") 
+    st.write(f"{profile}")
 
 # Collect overview of roles
 role1 = """
