@@ -29,8 +29,8 @@ st.image(
     caption="Nature (Pixabay)"
 )
 
-# Add sections of the profile
-profile = """I am a researcher public health and academic leader with extensive experience in child growth, nutritional and life-course epidemiology, health data analytics, and community-oriented engagement. My work covers scientific research, curriculum innovation, research governance, and public empowerment.
+# Collecte overview of the profile
+profile = """I am a public health researcher and academic leader with extensive experience in child development, nutritional and life-course epidemiology, health data analytics, and community-oriented engagement. My work covers scientific research, curriculum innovation, research governance, and public empowerment.
 
 I currently serve as the Coordinator for the Master of Health Data Analytics programme at the University of the Western Cape, where I guide curriculum design and lead efforts to train the next generation of health data scientists. This Master’s programme is a key postgraduate qualification offered through the Faculty of Community and Health Sciences, equipping students with advanced analytical skills to interpret and apply health data for decision-making and systems improvement.  
 
@@ -42,10 +42,49 @@ My leadership extends beyond research and teaching. I serve as an executive memb
 
 In the community sphere, I conduct initiatives focused on men and boys, promoting positive health behaviours, social responsibility, and transformative engagement that addresses structural and behavioural determinants of health. I also co-host The Pulse of the Nation on The Voice Lounge - a dynamic online radio platform that amplifies meaningful dialogue on societal issues, health, and empowerment, merging media outreach with educational and social discourse."""
 
-# Add over view of profile
-st.subheader("Educator • Epidemiology Researcher • Public Speaker • Mentor & Coach")
+# Display over view of profile
+st.subheader("Educator • Researcher • Public Speaker • Trainer • Mentor & Coach")
 st.write(f"{profile}")
 
+
+# Collect overview of roles
+roles = """
+Academic Leadership
+•	Senior Lecturer, Nutritional and Life-course Epidemiology — Lead courses and research that examine how nutrition and exposures across life stages influence health outcomes.
+
+•	Coordinator, Master of Health Data Analytics Programme — Oversee curriculum, programme quality, and postgraduate training in analytical methods for public health professionals.  
+
+Research Leadership
+•	Principal Investigator, Men in Transition Research Project — Lead research aimed at understanding and transforming how men engage with health, identity, and societal roles.  
+•	Ethics Governance — Contribute to BMREC deliberations and ethical oversight of research at UWC.
+
+Training & Mentorship
+•	Trainer, Quantitative Methods & REDCap — Deliver capacity-building in data management and research methodology for academics and students.  
+•	Support postgraduate students and early career researchers in designing rigorous research and analysing complex datasets.
+
+Community & Media Engagement
+•	Coach for Men and Boys — Facilitate programmes that build positive health behaviours, leadership, and social engagement.
+•	Radio Co-host, The Pulse of the Nation — Engage audiences in dialogue on contemporary health and social issues via The Voice Lounge online media platform.
+
+"""
+
+# Display roles
+st.subheader("Selected Roles & Responsibilities")
+st.write(f"{roles}")
+
+
+# Collect overview of skills
+skills = """
+•	Data Management Tools: R, REDCap
+•	Statistical Modeling: Longitudinal analysis, regression modelling, biometric growth curves
+•	Research Methods: Survey design, protocol development, ethical research practice
+•	Communication & Dissemination: Academic writing, technical documentation, presentation skills
+•	Public speaking: Radio presenter, public speaker and group mentor & coach
+"""
+
+# Display skills
+st.subheader("Core Areas of Expertise")
+st.write(f"{skills}")
 
 # Add a contact section
 st.header("Contact Information")
