@@ -5,7 +5,6 @@ Created on Sun Feb  1 13:48:38 2026
 
 @author: lukhanyonyati
 """
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -48,43 +47,64 @@ st.write(f"{profile}")
 
 
 # Collect overview of roles
-roles = """
-Academic Leadership
+role1 = """
 •	Senior Lecturer, Nutritional and Life-course Epidemiology — Lead courses and research that examine how nutrition and exposures across life stages influence health outcomes.
 
 •	Coordinator, Master of Health Data Analytics Programme — Oversee curriculum, programme quality, and postgraduate training in analytical methods for public health professionals.  
+"""
 
-Research Leadership
+role2 = """
 •	Principal Investigator, Men in Transition Research Project — Lead research aimed at understanding and transforming how men engage with health, identity, and societal roles.  
+
 •	Ethics Governance — Contribute to BMREC deliberations and ethical oversight of research at UWC.
+"""
 
-Training & Mentorship
+role3 = """
 •	Trainer, Quantitative Methods & REDCap — Deliver capacity-building in data management and research methodology for academics and students.  
-•	Support postgraduate students and early career researchers in designing rigorous research and analysing complex datasets.
 
-Community & Media Engagement
+•	Support postgraduate students and early career researchers in designing rigorous research and analysing complex datasets.
+"""
+
+role4 = """
 •	Coach for Men and Boys — Facilitate programmes that build positive health behaviours, leadership, and social engagement.
+
 •	Radio Co-host, The Pulse of the Nation — Engage audiences in dialogue on contemporary health and social issues via The Voice Lounge online media platform.
 
 """
 
 # Display roles
 st.subheader("Selected Roles & Responsibilities")
-st.write(f"{roles}")
+st.write("**Academic Leadership**")
+st.write(f"{role1}")
+
+st.write("**Research Leadership**")
+st.write(f"{role2}")
+
+st.write("**Training & Mentorship**")
+st.write(f"{role3}")
+
+st.write("**Community & Media Engagement**")
+st.write(f"{role4}")
 
 
 # Collect overview of skills
 skills = """
 •	Data Management Tools: R, REDCap
+
 •	Statistical Modeling: Longitudinal analysis, regression modelling, biometric growth curves
+
 •	Research Methods: Survey design, protocol development, ethical research practice
+
 •	Communication & Dissemination: Academic writing, technical documentation, presentation skills
+
 •	Public speaking: Radio presenter, public speaker and group mentor & coach
 """
 
 # Display skills
 st.subheader("Core Areas of Expertise")
 st.write(f"{skills}")
+
+
 
 # Add a contact section
 st.header("Contact Information")
