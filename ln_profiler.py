@@ -28,6 +28,11 @@ st.image(
     caption="Nature (Pixabay)"
 )
 
+with st.sidebar: 
+    st.title("Sections") 
+    selection = st.radio("Go to:",
+                     "About","Publications","Projects","Contact")
+
 # Collect overview of the profile
 profile = """I am a public health researcher and academic leader with extensive experience in child development, nutritional and life-course epidemiology, health data analytics, and community-oriented engagement. My work covers scientific research, curriculum innovation, research governance, and public empowerment.
 
@@ -41,15 +46,16 @@ My leadership extends beyond research and teaching. I serve as an executive memb
 
 In the community sphere, I conduct initiatives focused on men and boys, promoting positive health behaviours, social responsibility, and transformative engagement that addresses structural and behavioural determinants of health. I also co-host The Pulse of the Nation on The Voice Lounge - a dynamic online radio platform that amplifies meaningful dialogue on societal issues, health, and empowerment, merging media outreach with educational and social discourse."""
 
-with st.sidebar: 
-    st.title("About") 
-    selection = st.radio("Go to:",
-                     "About","Publications","Projects","Contact")
 
 # Display over view of profile
 if selection== "About": 
     st.subheader("Educator • Researcher • Public Speaker • Trainer • Mentor & Coach") 
     st.write(f"{profile}")
+
+elif selection == "Publications":
+    st.subheader("Publications")
+    print("I have published over 30 publications with over 500 citations")
+
 
 # Collect overview of roles
 role1 = """
@@ -108,6 +114,7 @@ skills = """
 # Display skills
 st.subheader("Core Areas of Expertise")
 st.write(f"{skills}")
+
 
 
 
